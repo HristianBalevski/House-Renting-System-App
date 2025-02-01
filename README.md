@@ -27,7 +27,4 @@ The **CI workflow** will:
 5. **Build the application** to ensure it compiles successfully  
 6. **Run tests** to validate the code  
 
----
-
-## 📂 Project Structure  
 
