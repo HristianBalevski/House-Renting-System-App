@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'dotnet build'
+                sh '/Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild'
             }
         }
 
