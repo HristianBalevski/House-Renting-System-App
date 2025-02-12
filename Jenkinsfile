@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        steps('Build') {
             sh 'dotnet build'
         }
 
-        stage('Run Tests') {
+        steps('Run Tests') {
             sh 'dotnet test'
         }
     }
