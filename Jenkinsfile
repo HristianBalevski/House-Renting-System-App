@@ -9,8 +9,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'dotnet build --configuration Release'
-            }
+                script {
+                    sh 'dotnet build right-first-time.sln --configuration Release'
+                }
         }
         stage('Run tests') {
             steps {
