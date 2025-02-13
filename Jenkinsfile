@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'dotnet build right-first-time.sln --configuration Release'
+                    sh '/usr/local/share/dotnet/dotnet build right-first-time.sln --configuration Release'
                 }
         }
         stage('Run tests') {
